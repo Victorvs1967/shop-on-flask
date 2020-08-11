@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/pricing.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    {% block title %}{% endblock %}
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex flex-md-row p-3 px-md-4 mb-3 navbar-light bg-light border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">
+            <a href="/" style="text-decoration: none; color: black;">Shop on Flask</a>
+        </h5>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <navbar class="navbar-nav my-2 my-md-0 mr-md-3 ml-auto">
+                <a class="p-2 text-dark" href="/">Home</a>
+                <a class="p-2 text-dark" href="/about">About us</a>
+            </navbar>
+            <a class="btn btn-outline-primary" href="/create">Add Goods</a>
+        </div>
+    </nav>
+            
+    {% block body %}{% endblock %}
+
+    <div class="container">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top col">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <img class="mb-2" src="../static/img/bootstrap-solid.svg" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/">Cool stuff</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/">Resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/about">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>   
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/jquery-3.5.1.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
+</body>
+</html>

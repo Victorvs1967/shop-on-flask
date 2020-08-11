@@ -1,0 +1,6 @@
+DB_ENGINE = 'postgres'
+DB_USER = 'victors'
+DB_PASSWORD = 'victor77'
+DB_PORT = '5432'
+DB_HOST = 'localhost'
+DB_NAME = 'shop'
