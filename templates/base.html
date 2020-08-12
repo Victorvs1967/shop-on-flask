@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg d-flex flex-md-row p-3 px-md-4 mb-3 navbar-light bg-light border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-lg d-flex flex-md-row p-3 px-md-4 mb-3 navbar-light bg-light border-bottom shadow-sm fixed-top">
         <h5 class="my-0 mr-md-auto font-weight-normal">
             <a href="/" style="text-decoration: none; color: black;">Shop on Flask</a>
         </h5>
@@ -25,13 +25,14 @@
                 <a class="p-2 text-dark" href="/about">About us</a>
             </navbar>
             <a class="btn btn-outline-primary" href="/create">Add Goods</a>
+            <a class="btn btn-outline-primary ml-1" href="/login">Login</a>
         </div>
     </nav>
             
     {% block body %}{% endblock %}
 
     <div class="container">
-        <footer class="pt-4 my-md-5 pt-md-5 border-top col">
+        <footer class="pt-4 my-md-5 pt-md-5 bg-light border-top col">
             <div class="row">
                 <div class="col-6 col-md">
                     <img class="mb-2" src="../static/img/bootstrap-solid.svg" alt="" width="24" height="24">

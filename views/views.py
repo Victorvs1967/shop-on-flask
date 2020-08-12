@@ -38,6 +38,10 @@ def item_buy(id):
 def about():
     return render_template('about.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 @app.route('/create', methods=['GET', 'POST']) 
 def create():
     if request.method == 'POST':
